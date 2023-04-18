@@ -3,6 +3,9 @@
 # 1. Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # 2. Install Mac App Store command line interface
 brew install mas
 
@@ -34,4 +37,4 @@ then
 fi
 
 # 6. Execute configuration script
-sh ./configure.sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/team-chaos-it/chaos-setup-mac/main/configure.sh)"
