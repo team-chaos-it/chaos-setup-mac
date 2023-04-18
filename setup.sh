@@ -32,3 +32,6 @@ then
     echo "Installing personal tools"
     curl -fsSL "https://raw.githubusercontent.com/team-chaos-it/chaos-setup-mac/main/$USER/personal.Brewfile" | brew bundle --file=/dev/stdin
 fi
+
+# 6. Execute configuration script
+sh ./configure.sh
