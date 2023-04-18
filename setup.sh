@@ -30,7 +30,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
 	echo ""
     echo "Installing personal tools"
-    curl -fsSL "https://raw.githubusercontent.com/team-chaos-it/chaos-setup-mac/main/$USER/personal.Brewfile" | brew bundle --file=/dev/stdin
+    curl -fsSL "https://raw.githubusercontent.com/team-chaos-it/chaos-setup-mac/$USER/personal.Brewfile" | brew bundle --file=/dev/stdin
 fi
 
 # 6. Execute configuration script
