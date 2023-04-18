@@ -1,5 +1,7 @@
 brew "platformio"
 brew "clang-format"
+brew "imagemagick"
+brew "nativefier"
 
 cask "whatsapp"
 cask "onedrive"
